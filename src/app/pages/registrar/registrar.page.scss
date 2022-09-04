@@ -1,0 +1,18 @@
+@use '../../../global.scss';
+
+ion-content{
+  form{
+    ion-item{
+      color: white;
+      display: flex;
+      
+    }
+    ion-label{
+      
+      color: white;
+    }
+    ion-button{
+      align-items: center;
+    }
+  }
+}

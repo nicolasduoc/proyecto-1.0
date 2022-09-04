@@ -8,7 +8,7 @@
 }
 
 ion-card {
-    --background: linear-gradient(#e66465, #9198e5);
+    --background: linear-gradient(#d11913ba, rgb(19, 42, 219));
     margin: 0 auto;
     top: 5vh;
     height: 90vh;
@@ -48,6 +48,8 @@ ion-card {
         font-size: large;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
+        background-color: black;
+        color: white;
     }
 }
 
