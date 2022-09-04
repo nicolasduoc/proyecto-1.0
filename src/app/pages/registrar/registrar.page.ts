@@ -12,8 +12,9 @@ export class RegistrarPage implements OnInit {
 
   //VAMOS A CREAR EL GRUPO DEL FORMULARIO:
   alumno = new FormGroup({
-    rut : new FormControl('', [Validators.required, Validators.pattern('[0-9]{1,2}.[0-9]{3}.[0-9]{3}-[0-9kK]{1}')]),
-    nom_completo: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    rut : new FormControl('', [Validators.required, Validators.pattern('[0-9]{1,2}[0-9]{3}[0-9]{3}-[0-9kK]{1}')]),
+    /* correo: new FormControl('',Validators.required, Validators.), */
+    nom_completo: new FormControl('', [Validators.required, Validators.minLength(4)]),
     fecha_nac: new FormControl('', Validators.required),
     semestre: new FormControl('', [Validators.required, Validators.min(1), Validators.max(8)]),
     password: new FormControl('', [Validators.required, Validators.minLength(6), Validators.maxLength(18)]),
